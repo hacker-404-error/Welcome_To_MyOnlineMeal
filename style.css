@@ -1,0 +1,338 @@
+/*CSS reset*/
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+/* CSS Variables */
+:root
+{
+    --navbar-height:59px;
+}
+
+/******************************************** Navigation_Bar************************************* */
+#navbar
+{
+    position:relative;
+    /* border: 2px solid red; */
+    display: flex;
+    align-items: center;
+    top:0;
+}
+
+#navbar::before
+{
+    content: "";
+    background-color: rgba(0, 0, 0, 0.76);
+    position:absolute;
+    top:0px;
+    left:0px;
+    height:100%;
+    width:100%;
+    z-index: -1;
+}
+
+#navbar:hover
+{
+    background-color: rgba(0, 0, 0, 0.568);    
+}
+
+/*  Navigation Bar : Logo and Image */
+#logo
+{
+    /* border: 2px solid black; */
+    margin: 10px 21px;
+    
+}
+#logo img
+{
+    height: 70px;
+    /* border: 2px solid green; */
+    margin: 4px 22px;
+    width: 150px;
+    height: 137px;
+}
+
+
+/* Navigation Bar : List Styling */
+#navbar ul
+{
+    display: flex;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+    text-shadow: 10px 10px 10px rgb(5, 4, 4);
+}
+
+
+#navbar ul li
+{
+    list-style: none;
+    font-size: 1.9rem;
+}
+
+#navbar ul li a
+{
+    font-family: 'Baloo Bhaijaan 2', cursive;
+    color: white;
+    display:block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover
+{
+    color: rgb(0, 0, 0);
+    background-color: cadetblue;
+    display:block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+    text-shadow:10px 10px 5px rgb(39, 60, 61);
+
+}
+
+/********************************************HOME_SECTION**********************************************/
+#home
+{
+    /* border:3px solid purple; */
+    display: flex;
+    flex-direction:column;
+    padding:3px 200px;
+    height:599px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before
+{
+    content: "";
+    position:absolute;
+    background: url('./img/bg1.jpg') no-repeat center center/cover;
+    height:100%;
+    width:100%;
+    top:0px;
+    left:0px;
+    z-index: -1;
+    opacity:0.89;
+}
+
+#home h1
+{
+    color:rgb(235, 235, 243);
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+    text-shadow:5px 5px 5px rgb(17, 16, 16);
+}
+
+#home p
+{
+    color:white;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Bree Serif', serif;
+    text-shadow:5px 5px 5px rgb(17, 16, 16);
+}
+
+
+/***************************************** SERVICE_SECTION ********************************************/
+#services
+{
+    margin:34px;
+    display:flex;
+
+}
+
+#services .box
+{
+    border: 2px solid red;
+    padding:40px;
+    margin:3px 6px;
+    border-radius: 23px;
+    background-color: blanchedalmond;
+}
+
+#services .box img
+{
+    display:block;
+    height:160px;
+    margin: auto;
+}
+
+#services .box p
+{
+    font-family: 'Bree Serif', serif;
+}
+
+
+
+/*********************************************CLIENT_SECTION********************************************/
+#client-section
+{
+    /* border:2px solid red; */
+    position:relative;
+    height: 344px;
+}
+
+#client-section::before
+{
+    content:"";
+    position: absolute;
+    background:url('./img/bg.jpg');
+    /* background-size: contain; */
+    width:100%;
+    height:100%;
+    background-size: contain;
+    z-index:-1;
+    opacity:0.4;
+}
+
+#clients
+{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+#clients img
+{
+    height:130px;
+}
+
+.client-item
+{
+    padding: 40px;
+}
+
+
+
+/************************************************CONTACT_SECTION****************************************/
+#contact
+{
+    position:relative;
+}
+#contact::before
+{
+    content:"";
+    position: absolute;
+    background:url('./img/contact.jpg') no-repeat center center/cover;
+    width:100%;
+    height:100%;
+    z-index:-1;
+    opacity:0.4;
+}
+
+#contact-box
+{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;;
+}
+
+#contact-box input,#contact-box textarea
+{
+    width:100%;
+    padding:0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem; ;
+}
+
+#contact-box label
+{
+    font-size:1.3rem;
+    font-family: 'Bree Serif', serif;
+    /* padding:20px; */
+    /* text-shadow: 1px 1px 5px black; */
+}
+
+#contact-box form
+{
+    width: 40%;
+}
+
+#contact-box input , textarea
+{
+    background-color: rgba(202, 148, 123, 0.438);
+    color: #dc4c4c;
+    /* box-shadow: inset -20px 17px 28px 0px rgb(5 4 4 / 66%); */
+    text-align: center;
+    font-size: larger;
+    color: rgb(4, 23, 31);
+}
+
+/* input,input::-webkit-input-placeholder
+{
+    font-size: 20px;
+} */
+
+#contact-box input:hover , textarea:hover
+{
+    background-color: rgba(136, 202, 123, 0.438);
+}
+
+
+/*************************************************FOOTER************************************************/
+footer
+{
+    background-color: black;
+    color: blanchedalmond;
+    padding: 9px 20px;
+    height: 127px;
+}
+
+#pritamdas
+{
+    font-family: 'Bree Serif', serif;
+    padding: 47px 42vw;
+    text-align: center;
+}
+
+
+
+/***********************************************UTILITY_CLASSES*****************************************/
+.h-primary
+{
+    font-size: 3.8rem;
+    padding: 12px;
+    font-family: 'Bree Serif', serif;
+
+}
+.h-secondary
+{
+    font-size: 2.5rem;
+    padding: 12px;
+    font-family: 'Bree Serif', serif;
+    text-shadow:20px 5px 20px rgb(30, 209, 14);
+}
+.btn
+{
+    padding: 10px 15px;
+    border: 2px solid rgb(22, 19, 19);
+    background-color: rgba(0, 0, 0, 0.719);
+    color: rgb(250, 250, 250);
+    margin: 17px;
+    font-size: 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: 'Bree Serif', serif;
+    text-shadow:5px 5px 5px rgb(17, 16, 16);
+    
+}
+.btn:hover
+{
+    padding: 10px 15px;
+    border: 2px solid rgb(5, 4, 4);
+    background-color: rgba(34, 207, 43, 0.493);
+    color: rgb(250, 250, 250);
+    margin: 17px;
+    font-size: 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: 'Bree Serif', serif;
+    text-shadow:5px 5px 5px rgb(17, 16, 16);
+    box-shadow:5px 5px 5px black;
+}
+.center
+{
+    text-align: center;
+}
